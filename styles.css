@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap');
 
 *
 {
@@ -165,72 +164,120 @@ html
     width: 100%;
     background-color: #279DB7;
     color: #ddd;
-    padding-top: 4rem;
-    /* position: fixed; */
-
-    /* z-index: 101; */
+    padding: 4rem 0;
+    padding-top: 8rem;
 }
 
-.invitation__info
+.invit__title-container
 {
-    margin: auto;
-    min-width: min-content;
-    
-}
-
-.invitation__title
-{
-    width: 100%;
-    font-size: 3rem;
-    text-align: center;
-    letter-spacing: 0.3rem;
-    margin-bottom: 3rem;
-    background-color: #186576;
-    padding: 1rem 3rem;
-}
-
-.invitation__subtitle
-{
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 2rem;
-    margin: 4rem auto;
-    margin-top: 0;
     width: 90%;
-    max-width: 40rem;
-    border-bottom: 0.2rem solid #eee;
-}
-
-.invitation__message
-{
-    text-align: center;
-    padding: 3rem 2rem;
-    font-size: 2rem;
-}
-
-.invitation__container  
-{
-    width: 100%;
+    max-width: 67rem;
+    margin: auto;
+    margin-bottom: 4rem;
+    
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
 }
 
-.invitation__img-container  
+
+.invit__title
+{
+    font-family: "Lobster", sans-serif;
+    letter-spacing: 3px;
+    font-size: 4rem;
+    max-width: 25rem;
+    margin: auto;
+    text-align: center;
+    transform: rotate(-2deg);
+
+    text-shadow: 3px 3px 0px #707070;
+    animation: 1s linear 0s infinite alternate invit-title;
+}
+
+.invit__subtitle
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1rem;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    width: 90%;
+    max-width: 20rem;
+    margin: 2rem auto;
+    text-align: center;
 }
 
-.invitation__img    
+.invit__subtitle--span
 {
-    width: 20rem;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    /* margin-bottom: 0.1rem; */
 }
 
+.invit__img    
+{
+    width: 15rem;
+    display: block;
+    margin: auto;
+    filter: drop-shadow(6px 8px 0px #0b2d34);
+}
 
+.invit__img-container
+{
+    margin: 2rem 0;
+}
+
+.invit__day
+{
+    width: 65%;
+    max-width: 26rem;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    border: 2px #fff;
+    border-style: dashed none dashed none;
+}
+
+.invit__date
+{
+    max-width: 11rem;   
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    /* text-align: center; */
+    /* padding-right: 2rem; */
+}
+
+.invit__date-span
+{
+    letter-spacing: 0px;
+}
+
+.invit__hour
+{
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    border-left: 2px solid #fff;
+}
+
+.invit__place
+{
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    text-shadow: 3px 3px 0px #383838;
+}
+
+.invit__place-icon
+{
+    margin-right: 1rem;
+}
 
 
 
@@ -456,5 +503,17 @@ html
     {
         transform: translateY(-2px);
         color: rgb(193, 146, 28);
+    }
+}
+
+@keyframes invit-title 
+{
+    from
+    {
+        transform: scale(1.05);
+    }    
+    to
+    {
+        transform: scale(1);
     }
 }

@@ -16,14 +16,21 @@
 
             <div class="header__menu">
 
+                <a href="#activity" class="menu__important-link">
+                    <i class="fa-solid fa-star menu__important"></i>
+                </a>
+
                 <i class="fa-solid fa-bars header__menu-icon"></i>
 
-                <!-- <ul class="header__list">
-                    <li class="header__item"></li>
-                    <li class="header__item"></li>
-                    <li class="header__item"></li>
-                    <li class="header__item"></li>
-                </ul> -->
+                <ul class="header__list">
+                    <a href="#section-proposal" class="header__item">
+                        <i class="fa-solid fa-newspaper menu__icon"></i>
+                        Propuestas</a>
+                    <a href="#section-gallery" class="header__item">
+                        <i class="fa-solid fa-camera-retro menu__icon"></i>
+                        Galería</a>
+                </ul>
+
             </div>
 
         </nav>
@@ -32,7 +39,7 @@
 
     <div class="web-container">
 
-        <!-- <section class="invitation">
+        <section id="activity" class="invitation">
 
             <div class="invitation__info">
                 <h2 class="invitation__title">PRÓXIMA ACTIVIDAD</h2>
@@ -51,7 +58,7 @@
                 </div>
             </div>
 
-        </section> -->
+        </section>
 
         <section class="welcome">
 
@@ -70,7 +77,7 @@
 
         </section>
 
-        <section class="proposal">
+        <section id="section-proposal" class="proposal">
 
             <p class="proposal__temporal-title">Mis propuestas</p>
 
@@ -108,7 +115,7 @@
 
         </section>
 
-        <section class="gallery">
+        <section id="section-gallery" class="gallery">
 
             <div class="gallery__introductory">
 
@@ -127,5 +134,8 @@
         </section>
 
     </div>
+
+
+    <script src="./index.js"></script>
 </body>
 </html>
